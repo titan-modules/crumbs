@@ -23,7 +23,7 @@ from titantools.data_science import DataScience
 from titantools.system import execute_command as shell_out
 
 from time import time, gmtime, strftime
-from os.path import dirname,basename,isfile
+from os.path import dirname,basename,isfile,realpath
 from os import chmod
 #from titantools.decorators import run_every_5
 
@@ -42,8 +42,12 @@ class AnalyzeCrumbs(object):
       self.status = 0
       self.datastore = []
 
-      if isfile('config.json'):
-        with open('config.json') as config_file:   
+      # Create config file
+      config_file = '%s/config.json' % dirname(realpath(__file__))
+
+      # Check if config exists
+      if isfile(config_file):
+        with open(config_file) as config_file:   
           self.config = json.load(config_file)
 
     def get_crumbs(self):

@@ -1,0 +1,28 @@
+{
+	"crumbs": {
+		"name": {
+			"type": "text", 
+            "default" : "NULL"
+		}, 
+		"gateway": {
+			"type": "text",
+            "default" : "NULL"
+		},
+		"public_ip": {
+            "default" : "NULL",
+			"type": "text"
+		},
+		"reverse_dns": {
+            "default" : "NULL",
+			"type": "text"
+		},
+		"traceroute": {
+            "default" : "NULL",
+			"type": "text"
+		},					
+        "date" : {
+            "type" : "text",
+            "nullable" : false
+        }
+	}
+}      

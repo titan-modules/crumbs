@@ -1,0 +1,5 @@
+{
+	"connectivity_target": "http://google.com",
+	"traceroute_target": "google.com",
+	"externalip_target": "http://23.253.218.205/"
+}      

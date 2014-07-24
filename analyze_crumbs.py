@@ -149,7 +149,7 @@ if __name__ == "__main__":
     start = time()
 
     # the "exec_date" is used as the "date" field in the datastore
-    exec_date = strftime("%a, %d %b %Y %H:%M:%S", gmtime())
+    exec_date = strftime("%a, %d %b %Y %H:%M:%S-%Z", gmtime())
 
     ###########################################################################
     # Gather data
